@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Место, в котором нет состояния</title>
+<meta name="description" content="Практика Георгия Кокурина. Место, в котором нет состояния.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f0f0f">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background:#0f0f0f; color:#e8e8e8; line-height:1.6; }
+.container { max-width:720px; margin:0 auto; padding:20px; }
+header { text-align:center; padding:40px 0 20px; }
+h1 { font-size:2rem; font-weight:400; margin-bottom:10px; }
+nav.top-menu { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:30px 0; }
+nav.top-menu a { color:#aaa; text-decoration:none; padding:8px 14px; border:1px solid #333; border-radius:6px; font-size:0.95rem; }
+nav.top-menu a:hover { background:#222; }
+.self-btn {
+  display:block;
+  width:100%;
+  background:#1a1a1a;
+  color:#e8e8e8;
+  border:1px solid #333;
+  border-radius:8px;
+  padding:16px;
+  font-size:1.1rem;
+  text-align:center;
+  margin:20px 0;
+  cursor:pointer;
+}
+.self-btn:hover { background:#222; }
+.instruction {
+  display:none;
+  background:#1a1a1a;
+  border-left:3px solid #666;
+  padding:24px;
+  margin:20px 0;
+}
+.instruction.show { display:block; }
+.instruction h2 { font-size:1.3rem; margin-bottom:16px; font-weight:400; }
+.instruction ol { padding-left:20px; }
+.instruction li { margin-bottom:10px; }
+section { margin:50px 0; }
+h2 { font-size:1.6rem; margin-bottom:20px; font-weight:400; }
+p { margin-bottom:16px; }
+footer { text-align:center; padding:40px 0; color:#666; font-size:0.9rem; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Место, в котором нет состояния</h1>
+</header>
+
+<nav class="top-menu">
+<a href="#method">О методе</a>
+<a href="#texts">Тексты</a>
+<a href="#about">Обо мне</a>
+<a href="#session">Сессия</a>
+</nav>
+
+<button class="self-btn" onclick="document.getElementById('instruction').classList.toggle('show')">Самоследование</button>
+
+<div id="instruction" class="instruction">
+<h2>Инструкция для самостоятельного исследования</h2>
+<ol>
+<li>Заметь состояние, в котором ты сейчас.</li>
+<li>Одновременно посмотри перед собой и найди место, где этого состояния нет.</li>
+<li>Удерживай оба места сразу. Не убирай состояние и не меняй его.</li>
+<li>Подожди, пока оно само перестанет занимать всё и начнёт завершаться.</li>
+</ol>
+<p style="margin-top:20px;">Ничего больше делать не нужно.</p>
+</div>
+
+<section id="method">
+<h2>О методе</h2>
+<p>Работаю с незавершёнными состояниями. Тревога, страх, обиды, апатия, вина, напряжение, эмоциональные петли.</p>
+<p>За одну сессию мы найдём то место, где вашего состояния нет, и вы сможете завершить то, что держало вас годами.</p>
+</section>
+
+<section id="texts">
+<h2>Тексты</h2>
+<p><a href="gorizont.html" style="color:#aaa;">Линия горизонта</a></p>
+<p><a href="otkuda.html" style="color:#aaa;">Откуда ты смотришь</a></p>
+<p><a href="tyurma.html" style="color:#aaa;">Тюрьма, которую чертит сам узник</a></p>
+<p><a href="singularity.html" style="color:#aaa;">Сингулярность и границы</a></p>
+<p><a href="malost.html" style="color:#aaa;">Малость нашего существования</a></p>
+<p><a href="vozvrashenie.html" style="color:#aaa;">Возвращение к источнику</a></p>
+</section>
+
+<section id="about">
+<h2>Обо мне</h2>
+<p>Георгий Кокурин. Москва.</p>
+<p>Кризисный психолог. Автор практики «Место, в котором нет состояния».</p>
+</section>
+
+<section id="session">
+<h2>Сессия</h2>
+<p>Длительность: 60–90 минут (в зависимости от того, как состояние будет завершаться).</p>
+<p>Онлайн. 2000 ₽.</p>
+<p><a href="https://t.me/egorsgandi7" style="color:#aaa;">Telegram</a> · <a href="https://vk.com/egorsgandi" style="color:#aaa;">ВКонтакте</a></p>
+</section>
+
+<footer>
+© Георгий Кокурин
+</footer>
+</div>
+</body>
+</html>
